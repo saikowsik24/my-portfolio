@@ -1,0 +1,270 @@
+/* Projects Section */
+#project {
+    // background: url('/assets/projects.png') no-repeat center center/cover;
+    background:#000000;
+    padding: 4em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+#project h2 {
+    color: #ffbd39 ;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#project .container {
+    // background: rgba(255, 255, 255, 0.94);
+    background:#000000;
+    border-radius: 10px;
+    padding: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 1em 0; /* Add vertical padding */
+}
+
+.carousel-wrapper {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* PrimeNG Carousel Customization */
+:host ::ng-deep .p-carousel {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-content,
+:host ::ng-deep .p-carousel .p-carousel-container,
+:host ::ng-deep .p-carousel .p-carousel-items-container {
+    height: 100%;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-title h3 {
+    font-size: 1em;
+    margin: 0.5em 0;
+    color: #ffbd39;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 1em;
+    margin-top: 0.5em;
+    width: 100%; /* Ensure full width */
+}
+
+.project-links a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Make links take equal width */
+    max-width: 120px; /* Limit maximum width */
+    background:#ffbd39;
+    color:#000000;
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    padding-left: 23px;
+}
+
+.project-links a:hover {
+    opacity: 0.8;
+    background:#f3a508;
+    color:#000000;
+}
+
+/* Add these new rules */
+.project-links a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.project-links a:active {
+    background:#f3a508; /* Same as hover state */
+}
+
+.project-links a:visited {
+    background:#ffbd39; /* Reset to original color */
+    color:#000000;
+}
+
+
+.project-links a.p-button-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 0.938) !important;
+    background: transparent; /* Optionally make the background transparent */
+}
+
+.project-links a.p-button-secondary:hover {
+    border: 1px solid #e9ba5d !important; /* Add hover effect */
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.align-center{
+padding-left: 35px !important;}
+
+/* Carousel navigation buttons */
+:host ::ng-deep .p-carousel .p-carousel-prev,
+:host ::ng-deep .p-carousel .p-carousel-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    font-size: 1em;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    margin: 0;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #ffbd39;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev {
+    left: 0.5em;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-next {
+    right: 0.5em;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev span,
+:host ::ng-deep .p-carousel .p-carousel-next span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev:not(.p-disabled):hover,
+:host ::ng-deep .p-carousel .p-carousel-next:not(.p-disabled):hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #project {
+        padding: 2em 1em;
+    }
+
+    #project .container {
+        padding: 1em;
+        width: 95%;
+        max-width: none;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+    
+    .project-item {
+        max-width: 100%;
+    }
+
+    .carousel-wrapper,
+    :host ::ng-deep .p-carousel {
+        height: 200px;
+    }
+
+    .img-container {
+        border-radius: 5px;
+    }
+
+    .project-title h3 {
+        font-size: 0.9em;
+    }
+
+    .project-links a {
+        padding: 0.4em 0.8em;
+    }
+
+    .align-center{
+        padding-left: 25px !important;}
+        
+}
+
+@media (max-width: 480px) {
+    #project {
+        padding: 1em 0.5em;
+    }
+
+    #project .container {
+        padding: 0.5em;
+        width: 98%;
+    }
+
+    .carousel-wrapper,
+    :host ::ng-deep .p-carousel {
+        height: 180px;
+    }
+
+    .project-links {
+        flex-wrap: wrap; /* Allow wrapping if needed */
+    }
+
+    .project-links a {
+        flex: 0 1 auto; /* Allow links to shrink if needed */
+        min-width: 100px; /* Ensure minimum width for readability */
+    }
+}

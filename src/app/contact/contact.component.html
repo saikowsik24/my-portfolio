@@ -1,0 +1,36 @@
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">CONTACT</h2>
+            <form (ngSubmit)="onSubmit()" #contactForm="ngForm" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                <input type="text" name="name" [(ngModel)]="formData.name" #name="ngModel" placeholder="Your Name" required minlength="2">
+                <div *ngIf="name.invalid && (name.dirty || name.touched || formSubmitted)" class="error-message">
+                    <div *ngIf="name.errors?.['required']">Name is required</div>
+                    <div *ngIf="name.errors?.['minlength']">Name must be at least 2 characters long</div>
+                </div>
+    
+                <input type="email" name="email" [(ngModel)]="formData.email" #email="ngModel" placeholder="Your Email" required email>
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+                    <div *ngIf="email.errors?.['required']">Email is required</div>
+                    <div *ngIf="email.errors?.['email']">Please enter a valid email address</div>
+                </div>
+    
+                <textarea name="message" [(ngModel)]="formData.message" #message="ngModel" placeholder="Your Message" required minlength="5"></textarea>
+                <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error-message">
+                    <div *ngIf="message.errors?.['required']">Message is required</div>
+                    <div *ngIf="message.errors?.['minlength']">Message must be at least 5 characters long</div>
+                </div>
+    
+                <button type="submit" class="btn" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" [disabled]="contactForm.form.invalid">Send Message</button>
+            </form>
+            <div class="social-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <span class="linkedInstyle">
+                    <a class="linkedInstyle" href="https://www.linkedin.com/in/meda-venkata-sai-kowsik-24abc/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </span>
+                <span class="githubStyle">
+                <a href="https://github.com/saikowsik24" target="_blank"><i class="fab fa-github"></i></a>
+                </span>
+            </div>
+            <div style="color:#ffbd39"><strong>Email: </strong>{{Email}}</div>
+        </div>
+    </section>

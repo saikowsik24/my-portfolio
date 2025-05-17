@@ -1,0 +1,25 @@
+<section id="project">
+    <div class="container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-cubic">PROJECTS</h2>
+        <div class="project-grid">
+            <ng-container *ngFor="let project of projects; let i = index">
+                <div class="project-item" [ngClass]="{'top-row': i < 3, 'bottom-row': i >= 3}">
+                    <p-carousel [value]="project.images" [numVisible]="1" [numScroll]="1" [circular]="true" [showNavigators]="true">
+                        <ng-template let-image pTemplate="item">
+                            <div class="img-container">
+                                <img [src]="image" [alt]="project.title">
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                    <div class="project-title">
+                        <h3>{{project.title}}</h3>
+                    </div>
+                    <div class="project-links">
+                        <a [href]="project.link" target="_blank" class="p-button p-button-rounded p-button-info">View Project</a>
+                        <a [href]="project.gitUrl" target="_blank" class="p-button p-button-rounded p-button-secondary align-center">GitHub</a>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

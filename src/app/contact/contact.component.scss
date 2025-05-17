@@ -1,0 +1,212 @@
+/* Contact styles */
+#contact {
+    padding: 4em 2em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #000000;
+}
+
+#contact h2 {
+    color: #ffbd39;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+/* Form container styles */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #131111; /* Darker background for the form */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Deeper shadow for emphasis */
+}
+
+/* Input and textarea styles */
+#contact input, #contact textarea {
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #444; /* Darker border to blend with dark background */
+    background-color: #242222; /* Input background matches dark theme */
+    color: #f1f1f1; /* Light text for readability */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #ffbd39; /* Highlight border on focus */
+    outline: none;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: vertical;
+    font-size: 1em;
+}
+
+/* Button styles */
+#contact .btn {
+    background: linear-gradient(45deg, #ffbd39, #ffa500); /* Gradient for button */
+    color: #000; /* Darker button text for contrast */
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#contact .btn:hover {
+    background: darkorange;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+#contact .btn:disabled {
+       background: repeating-linear-gradient(
+        45deg,
+        #cccccc,
+        #cccccc 2px,
+        #bbbbbb 2px,
+        #bbbbbb 4px
+    );
+    cursor: not-allowed;
+}
+
+#contact .btn:disabled:hover {
+    background: repeating-linear-gradient(
+        45deg,
+        #cac7c7,
+        #cac7c7 2px,
+        #bbbbbb 2px,
+        #bbbbbb 4px
+    );
+    transform: none;
+}
+
+/* Error message styles */
+.error-message {
+    color: #ffbd39;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    text-align: left;
+    padding-left: 1em;
+}
+
+/* Social media links */
+.social-links {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #f1e7e7;
+    font-size: 2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.5); 
+    color: #524f4f;
+}
+
+/* LinkedIn specific styles */
+.linkedInstyle a {
+    color: #0077b5;
+    font-size: 2.2em;
+}
+
+.linkedInstyle a:hover {
+    transform: scale(1.1); 
+    color: #005582; 
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    #contact {
+        padding: 3em 1.5em;
+    }
+
+    #contact form {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact {
+        padding: 2.5em 1em;
+    }
+
+    #contact h2 {
+        font-size: 1.3em;
+    }
+
+    #contact form {
+        padding: 1.5em;
+    }
+
+    #contact input, #contact textarea {
+        font-size: 0.9em;
+    }
+
+    .social-links a {
+        font-size: 1.8em;
+    }
+
+    .linkedInstyle a {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact {
+        padding: 2em 0.5em;
+    }
+
+    #contact h2 {
+        font-size: 1.2em;
+    }
+
+    #contact form {
+        padding: 1em;
+    }
+
+    #contact input, #contact textarea {
+        font-size: 0.8em;
+        padding: 0.8em;
+    }
+
+    #contact textarea {
+        height: 120px;
+    }
+
+    #contact .btn {
+        padding: 0.6em 1.2em;
+        font-size: 0.9em;
+    }
+
+    .error-message {
+        font-size: 0.7em;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-links a {
+        font-size: 1.6em;
+    }
+
+    .linkedInstyle a {
+        font-size: 1.8em;
+    }
+}

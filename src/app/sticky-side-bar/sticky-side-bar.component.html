@@ -1,0 +1,6 @@
+<div class="sticky-sidebar" (click)="handleClick()" [ngClass]="{'hidden': isHidden}">
+  <div class="content">
+    <span class="circle" [ngClass]="{'bottom': isBackToTop}"></span>
+    <p>{{ isBackToTop ? 'Back To Top' : 'Projects' }}</p>
+  </div>
+</div>

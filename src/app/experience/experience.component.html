@@ -1,0 +1,37 @@
+<section id="experience">
+  <div class="container">
+      <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">EXPERIENCE</h2>
+      <div class="experience-items">
+          <ng-container *ngFor="let item of experienceItems">
+              <div class="experience-item" [class.selected-item]="selectedItem === item">
+                  <div
+                      class="experience-summary"
+                      (click)="toggleItem(item)"
+                      [ngClass]="{'selected-item': selectedItem === item}"
+                      data-aos="fade-up" data-aos-duration="1000" [attr.data-aos-delay]="item.delay">
+                      <h3 [innerHTML]="item.title"></h3>
+                      <p>{{ item.date }}</p>
+                  </div>
+                  <div *ngIf="isMobile && selectedItem === item" class="experience-detail-container">
+                      <div class="experience-detail" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+                          <ul class="experience-details-list">
+                              <li *ngFor="let detail of item.details">
+                                  {{ detail }}
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </ng-container>
+      </div>
+      <div *ngIf="!isMobile" class="experience-detail-container">
+          <div class="experience-detail" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic" *ngIf="selectedItem">
+              <ul class="experience-details-list">
+                  <li *ngFor="let detail of selectedItem.details">
+                      {{ detail }}
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>

@@ -1,0 +1,356 @@
+// /* Experience Styles */
+// #experience {
+//     // background: url('/assets/experience.png') no-repeat center center/cover;
+
+//     background:#000000;
+//     background-size: cover;
+//     padding: 7em;
+//     text-align: center;
+//     font-family: 'Montserrat', sans-serif;
+// }
+// #experience h2{
+//     color:#ffbd39
+// }
+// #experience .experience-items {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     margin-top: 20px;
+// }
+
+// #experience .experience-item {
+//     flex: 1 1 30%;
+//     margin: 10px;
+//     background: rgba(138, 129, 129, 0.1);
+//     border: 1px solid #171616;
+//     padding: 5px;
+//     border-radius: 10px;
+//     position: relative;
+//     transition: all 0.3s ease;
+//     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+//     cursor: pointer;
+// }
+
+// #experience .experience-item.selected-item {
+//     background-color: rgba(138, 129, 129, 0.1);
+//     color:#999;;
+//     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+//     border-left: 10px solid darkorange;
+// }
+
+// #experience .experience-item:hover {
+//     background-color: #726a6a;
+//     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15);
+// }
+
+// p{color:#999;}
+
+// #experience .experience-summary h2{
+//     padding: 15px;
+//     color:#999;
+// }
+
+// #experience .experience-detail-container {
+//     margin-top: 20px;
+//     padding: 15px;
+//     color: #999 !important;
+//     background-color: rgba(138, 129, 129, 0.1);
+//     border: 1px solid rgba(138, 129, 129, 0.1);
+//     border-radius: 10px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     opacity: 1;
+//     transition: opacity 0.3s ease;
+//     text-align: left;
+// }
+
+// #experience .experience-details-list {
+//     padding-left: 0;
+//     list-style: none;
+// }
+
+// #experience .experience-details-list li {
+//     position: relative;
+//     padding-left: 40px;
+//     margin-bottom: 10px;
+//     color:#999;
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 16px;
+//     line-height: 1.6;
+// }
+
+// #experience .experience-details-list li::before {
+//     content: '\25B2';
+//     position: absolute;
+//     left: 10px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     color: #ffbd39;
+//     font-size: 16px;
+// }
+
+// #experience .experience-detail-container.show {
+//     opacity: 1;
+// }
+
+// #experience h3 {
+//     color: #ffbd39;
+// }
+
+// /* Responsive styles */
+// @media screen and (max-width: 1024px) {
+//     #experience {
+//         padding: 5em;
+//     }
+
+//     #experience .experience-item {
+//         flex: 1 1 45%;
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     #experience {
+//         padding: 3em;
+//     }
+
+//     #experience .experience-item {
+//         flex: 1 1 100%;
+//     }
+
+//     #experience .experience-details-list li {
+//         font-size: 14px;
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     #experience {
+//         padding: 2em;
+//     }
+
+//     #experience .experience-summary {
+//         padding: 10px;
+//     }
+
+//     #experience .experience-detail-container {
+//         padding: 10px;
+//     }
+
+//     #experience .experience-details-list li {
+//         padding-left: 30px;
+//         font-size: 13px;
+//     }
+
+//     #experience .experience-details-list li::before {
+//         left: 5px;
+//         font-size: 14px;
+//     }
+// }
+
+
+/* Experience Styles */
+#experience {
+    background: #000000;
+    background-size: cover;
+    padding: 7em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#experience h2 {
+    color: #ffbd39;
+}
+
+#experience .experience-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#experience .experience-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    background: rgba(138, 129, 129, 0.1);
+    border: 1px solid #171616;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#experience .experience-item.selected-item {
+    background-color: rgba(138, 129, 129, 0.1);
+    color: #999;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    border-left: 10px solid darkorange;
+}
+
+#experience .experience-item:hover {
+    background-color: #726a6a;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    color: #999;
+}
+
+#experience .experience-summary h2 {
+    padding: 15px;
+    color: #999;
+}
+
+#experience .experience-detail-container {
+    margin-top: 20px;
+    padding: 15px;
+    color: #999 !important;
+    background-color: rgba(138, 129, 129, 0.1);
+    border: 1px solid rgba(138, 129, 129, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-align: left;
+}
+
+#experience .experience-details-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+#experience .experience-details-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    color: #999;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#experience .experience-details-list li::before {
+    content: '\25B2';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffbd39;
+    font-size: 16px;
+}
+
+#experience .experience-detail-container.show {
+    opacity: 1;
+}
+
+#experience h3 {
+    color: #ffbd39;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    #experience {
+        padding: 5em;
+    }
+
+    #experience .experience-item {
+        flex: 1 1 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #experience {
+        padding: 3em;
+    }
+
+    #experience .experience-items {
+        flex-direction: column;
+    }
+
+    #experience .experience-item {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    #experience .experience-detail-container {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    #experience .experience-details-list li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #experience {
+        padding: 2em;
+    }
+
+    #experience .experience-summary {
+        padding: 10px;
+    }
+
+    #experience .experience-detail-container {
+        padding: 10px;
+    }
+
+    #experience .experience-details-list li {
+        padding-left: 30px;
+        font-size: 13px;
+    }
+
+    #experience .experience-details-list li::before {
+        left: 5px;
+        font-size: 14px;
+    }
+}
+
+
+/* Updated media query for mobile devices */
+@media screen and (max-width: 768px) {
+    #experience .experience-items {
+        flex-direction: column;
+    }
+
+    #experience .experience-item {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    /* Remove background and styling from detail container */
+    #experience .experience-detail-container {
+        background-color: transparent !important;
+        background: none !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* Ensure text in details remains visible */
+    #experience .experience-detail,
+    #experience .experience-details-list li {
+        color: #999 !important;
+    }
+
+    /* Keep the triangle marker visible */
+    #experience .experience-details-list li::before {
+        color: #ffbd39 !important;
+    }
+
+    /* Maintain highlight on selected summary */
+    #experience .experience-item.selected-item .experience-summary {
+        background-color: rgba(255, 189, 57, 0.1) !important;
+        border-left: 5px solid #ffbd39 !important;
+        padding-left: 15px !important;
+    }
+
+    #experience .experience-item.selected-item .experience-summary h3 {
+        color: #ffbd39 !important;
+    }
+
+    /* Ensure no background on the item itself */
+    #experience .experience-item.selected-item {
+        background-color: transparent !important;
+    }
+}
