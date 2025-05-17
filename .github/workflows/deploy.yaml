@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # or 'master' if your default branch is master
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -30,3 +32,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/my-portfolio
+          token: ${{ secrets.GHTOKEN }}
