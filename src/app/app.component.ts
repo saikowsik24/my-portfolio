@@ -25,5 +25,5 @@ export class AppComponent implements OnInit{
       AOS.init();
     }
     
-  title = 'portfolio-Dileep';
+  title = 'portfolio-Meda Venkata Sai Kowsik';
 }
