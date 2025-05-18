@@ -31,5 +31,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/my-portfolio
+          folder: dist/my-portfolio/browser
           token: ${{ secrets.GHTOKEN }}
+          clean: true
+          clean-exclude: |
+            .git
