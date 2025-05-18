@@ -1,9 +1,19 @@
+<!-- filepath: my-portfolio/src/404.html -->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/my-portfolio/" />
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; URL=/" />
+    <script>
+      // For client-side routing support on GitHub Pages
+      (function() {
+        var redirectTo = '/my-portfolio/' + location.search + location.hash;
+        location.replace(redirectTo);
+      })();
+    </script>
   </head>
   <body>
-    <p>Redirecting...</p>
+    <h1>Redirecting...</h1>
   </body>
 </html>
