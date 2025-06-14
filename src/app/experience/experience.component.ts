@@ -21,9 +21,9 @@ export class ExperienceComponent {
 
   experienceItems = [
     {
-      title: 'Software Engineer Intern at Copart',
-      date: 'Dallas, Texas | Jan 2024 – Present',
-      link: 'https://www.copart.com/',
+      title: 'DevOps Engineer at Edgeverve Systems Limited',
+      date: 'Bengaluru, India | Dec 2021 – Present',
+      link: 'https://www.edgeverve.com/',
       details:[
         "Engineered and managed high-availability Kubernetes clusters across development, QA, and production environments using kubeadm, enabling reliable microservices orchestration and seamless rollouts.",
         "Designed and automated AWS infrastructure using Terraform and Ansible, provisioning scalable cloud resources including EC2, VPC, S3, ALB, IAM, and Lambda across multiple environments.",
