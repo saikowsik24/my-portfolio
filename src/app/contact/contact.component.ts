@@ -33,7 +33,7 @@ export class ContactComponent {
         ...this.formData,
         _replyto: this.formData.email,
         _subject: `New contact form message from ${this.formData.name}`,
-        _to: 'pdkv1999@gmail.com'
+        _to: 'saikowsik24@gmail.com'
       };
 
       this.http.post(formspreeUrl, body, { headers: headers }).subscribe(

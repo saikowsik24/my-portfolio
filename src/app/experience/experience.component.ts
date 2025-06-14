@@ -25,46 +25,19 @@ export class ExperienceComponent {
       date: 'Dallas, Texas | Jan 2024 – Present',
       link: 'https://www.copart.com/',
       details:[
-        "Created 15+ responsive Angular UI components based on Figma designs using PrimeNG and SCSS, ensuring compatibility with AngularJS legacy systems and boosting user engagement by 20%.",
-        "Broadcasted events to Google Analytics (GTM) delivering 35% increase in actionable insights, enabling marketing team to optimize campaign strategies and drive 20% growth in product sales.",
-        "Led weekly release cycles delivering 10+ critical defect fixes, maintaining 100% SLA compliance and enhancing customer satisfaction.",
-        "Revamped Lot Details pages through Angular14 migration utilizing TypeScript, HTML, CSS, Spring Boot, Bootstrap, REST APIs, and MySQL, delivering enhanced UI functionalities for clients.",
-        "Automated UI testing with BDD framework for Copart website, achieving 40% defect reduction through end-to-end testing while improving application reliability and release cycles.",
-        "Orchestrated comprehensive A/B testing for UI optimization, managing 20+ concurrent experiments across 10K+ users, driving 15% increase in feature adoption through data-driven strategies.",
-        "Executed secure license uploads & robust search feature, leveraging Angular, TypeScript, RESTful APIs & Spring Boot.",
+        "Engineered and managed high-availability Kubernetes clusters across development, QA, and production environments using kubeadm, enabling reliable microservices orchestration and seamless rollouts.",
+        "Designed and automated AWS infrastructure using Terraform and Ansible, provisioning scalable cloud resources including EC2, VPC, S3, ALB, IAM, and Lambda across multiple environments.",
+        "Implemented and maintained CI/CD pipelines using GitHub Actions for deploying Java, Python, and Angular microservices to Kubernetes clusters on AWS and GCP, accelerating delivery cycles.",
+        "Led blue-green deployment strategies within Kubernetes clusters, ensuring zero-downtime releases and enhancing system stability for global SaaS applications.",
+        "Deployed and configured monitoring solutions with Prometheus and Grafana for Kubernetes workloads, and centralized logging using ELK stack for observability and root cause analysis.",
+        "Integrated Kubernetes-native security and compliance checks using tools like SonarQube, Checkmarx, and Twistlock to ensure secure deployments and DevSecOps best practices.",
+        "Managed Docker-based containerization of backend and frontend services, packaged with Helm charts for consistent deployments across tenants and environments.",
+        "Migrated 150+ projects from GitLab to GitHub, optimizing CI/CD workflows and standardizing deployment pipelines using GitHub-hosted runners.",
+        "Collaborated with cross-functional teams to support production workloads on AWS EKS and troubleshoot real-time deployment issues in 24/7 on-call rotations.",
+        "Contributed to major platforms including TradeEdge and Market Connect, driving Kubernetes and AWS-based DevOps transformation for clients like Nike, Heineken, and Hipus."
         ],
       delay: 200
     },
-    {
-      title: 'Software Engineer at Oracle Cerner',
-      date: 'Bengaluru, India | May 2020 – Jan 2023',
-      link:'https://go.oracle.com/LP=142384?src1=:ad:pas:go:dg:a_nas:l5:RC_GOOG240501P00011C00354:MainAd&gad_source=1&gclid=Cj0KCQjwzva1BhD3ARIsADQuPnWMiAg3NgZ6ys7_TyPjesEmSYfNxSebchOBN1qEClV4WwueXRwKaaEaAikWEALw_wcB',
-
-      details:[
-        "Incorporated server-side rendering with Thymeleaf in Angular application, reducing page load time by 25% while achieving 15% performance boost and enhancing SEO metrics.",
-        "Optimized website performance by 3% through lazy loading implementation and Webpack code splitting, delivering faster component access and improved user experience.",
-        "Resolved HP-Fortify and SonarQube vulnerabilities boosting code quality by 30%, while implementing Splunk log visualization for enhanced system monitoring.",
-        "Architected NGINX server configuration with reverse proxy for SpringBoot services, deploying on AWS EC2 instances to achieve 20% faster request processing.",
-        "Engineered Visit List Filter Queue feature prioritizing patient encounters based on appointment dates and emergencies, seamlessly integrating with Revenue Cycle system.",
-        "Transformed APIs from synchronous to asynchronous using Spring Reactive Programming, achieving 50% performance optimization and implementing CI/CD through Jenkins pipeline.",
-        "Streamlined EHR data retrieval through API development for Cerner Revenue Cycle, resulting in 30% improvement in order processing efficiency.",
-        "Worked on spike, stories, and defects for the product Revenue Cycle, which involved assessing the interaction between multiple systems and API/design changes required to implement new features.",
-        ],
-      delay: 300
-    },
-    {
-      title: 'Software Engineer Intern <br>at Collins Aerospace',
-      date: 'Hyderabad, India | December 2019 – May 2020',
-      link:'https://www.collinsaerospace.com/',
-      details: [
-          "Developed Object-Oriented Fullstack Applications and REST APIs using Java 8 functional programming, adhering to SOLID principles and implementing design patterns.",
-          "Achieved 85%+ coverage with JUnit tests, leveraged Postman for backend testing, and contibuted to code reviews",
-          "Implemented user-friendly web login functionality and highly secure microservices-based REST APIs for IMMS Consumer Services using Java Spring Boot. Included the generation of JWT tokens, improving user access security by 35%.",
-          "Built an automation tool named Bidirectional Trace Validation, which crawls the JAMA & SVN websites to capture the requirement numbers, significantly reducing  the team’s manual effort by 30 hours during release activity. ",
-          "Day To Day Work: Worked with Flight Management System and Flight User Interface teams, mostly improving the consistency and efficiency of enterprise applications, and was involved in Continuous Build and Test (CBT)."      
-      ],
-      delay: 400
-    }
   ];
 
 
